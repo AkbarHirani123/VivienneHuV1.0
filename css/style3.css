@@ -1,0 +1,157 @@
+/* v3.0 One Row Navigation Final */
+body {
+	min-height: 2000px;
+}
+
+a{
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+/* Media Query for mobile 300px screen to 748px */
+@media (min-width: 330px) {
+
+	body {
+		margin-top: 100px;
+	}
+
+	.navbar {
+		height: 100px;
+		transition: all .75s ease;
+	}
+
+	/* Collapsable menu stuff */
+	.collapsing, .in {background-color: #222;}
+	.collapsing ul li a:hover, .collapsing ul li a:active, .collapsing ul li a:focus, 
+	.in ul li a:hover, .in ul li a:active, .in ul li a:focus {background-color: transparent; border-bottom: 1px solid #fff;}
+	.nav .open a:focus, .nav .open a:hover {background-color: transparent; border-bottom: 1px solid #fff;}
+
+	/* Collapsable menu stuff */
+	.navbar.navbar-inverse.navbar-fixed-top .open .dropdown-menu {
+	    position: static;
+	    float: none;
+	    width: auto;
+	    margin-top: 0;
+	    text-align: center;
+	}
+
+	/* Collapsable menu stuff */
+	.nav-justified > li > a, .nav-justified > li > div > a {
+		color: #fff;
+		text-align: center;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		padding: 10px 15px;
+	}
+
+	/* dropdown two column stuff */
+	.dropdown-header.more {
+		text-decoration: underline;
+		text-decoration-color: #e5e5e5;
+	}
+}
+
+/* Media Query for desktop 300px screen to 748px */
+@media (min-width: 768px) {
+	body {
+		margin-top: 0px;
+	}
+
+	/* make navbar inverse */
+	.navbar.navbar-inverse {
+		background: rgba(0, 0, 0, 0.4);
+		border-bottom: 1px solid #585858;
+	}
+
+	.navbar {
+		height: 125px;
+		transition: all .5s ease;
+	}
+
+	/* Shrink navbar on scroll (code in header.js) */
+	nav.navbar.navbar-smaller {
+		height:80px;
+	}
+
+	/* make responsive image fit to li in navigation */
+	a.img-responsive {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		padding-bottom: 0px !important;
+	}
+
+	/* Vertically align to bottom menu items (not good practice) */
+	.nav-justified > li, .nav-justified > li > div {
+		vertical-align: bottom;
+	}
+
+	/* Vertically align to middle menu items  on scroll (not good practice) */
+	.nav-justified.nav-align > li, .nav-justified.nav-align > li > div {
+		vertical-align: middle;
+	}
+
+	/* Fix dropdown menu */
+	.dropdown:hover .dropdown-menu {
+	   display: block;
+	   margin: auto;
+	}
+
+	/* Set a tags on navigation */
+	.nav-justified > li > a, .nav-justified > li > div > a {
+		text-align: center;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		padding: 10px 10px;
+		color: #fff;
+		border-bottom: 1px solid transparent;
+	}
+
+	/* On hover set to this */
+	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover,
+	.nav .open > div > a, .nav .open > div > a:focus, .nav .open > div > a:hover,
+	.nav-justified > li > a:hover, .nav-justified > li > a:focus,
+	.nav-justified > li > div > a:hover, .nav-justified > li > div > a:focus,
+	.nav .open > li > a, .nav .open > li > a:focus, .nav .open > li > a:hover,
+	.nav .open > li > div > a, .nav .open > li > div > a:focus, .nav .open > li > div > a:hover
+	 {
+		background-color: transparent;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+	/* Logo size in the Navigation */
+	.logo {
+		width: 45%;
+		height: auto;
+	}
+
+	.logo-name {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+/* Dropdown with multi-columns */
+.dropdown-menu.multi-column {
+        width: 430px;
+}
+
+/* Dropdown with multi-columns */
+.dropdown-menu.multi-column .dropdown-menu {
+        display: block !important;
+        position: static !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        min-width:100px;
+}
+
+/* Dropdown with multi-columns */
+.dropdown-header.more {
+	font-size: 14px;
+	text-decoration: unde;
+	text-decoration-color: #e5e5e5;
+}

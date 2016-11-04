@@ -1,0 +1,183 @@
+/* v1.0 */
+body {
+  min-height: 2000px;
+}
+
+a{
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.container-fluid {
+	padding: 0px 0px;
+}
+
+@media (min-width: 330px) {
+	body {
+		margin-top: 100px;
+	}
+	.navbar {
+		height: 100px;
+		transition: all .75s ease;
+	}
+
+	.carousel-inner .item {
+	    width: 100%;
+	    height: 250px;
+	    -webkit-background-size: 100% auto;
+	    -moz-background-size: 100% auto;
+	    -o-background-size: 100% auto;
+	    background-size: 100% auto;
+	}
+
+	.nav-justified > li > a{
+		color: #fff;
+	}
+	.carousel-caption
+	{
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		left: 0;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #fff;
+		text-align: center;
+		background: rgba(0,0,0,0.4);
+	}
+	.collapsing, .in {background-color: #222;}
+	.collapsing ul li a:hover, .collapsing ul li a:active, .collapsing ul li a:focus, 
+	.in ul li a:hover, .in ul li a:active, .in ul li a:focus {background-color: transparent; border-bottom: 1px solid #fff;}
+	.nav .open a:focus, .nav .open a:hover {background-color: transparent; border-bottom: 1px solid #fff;}
+
+	.navbar.navbar-inverse.navbar-fixed-top .open .dropdown-menu {
+	    position: static;
+	    float: none;
+	    width: auto;
+	    margin-top: 0;
+	}
+}
+
+/*@media (min-width: 480px) {
+	.navbar {
+		height: 100px;
+		transition: all .75s ease;
+	}
+
+	.carousel-inner .item {
+	    width: 100%;
+	    height: 400px;
+	    -webkit-background-size: 100% auto;
+	    -moz-background-size: 100% auto;
+	    -o-background-size: 100% auto;
+	    background-size: 100% auto;
+	}
+}*/
+
+@media (min-width: 768px) {
+	body {
+		margin-top: 0px;
+	}
+	.navbar.navbar-inverse {
+		background: rgba(0, 0, 0, 0.4);
+		border-bottom: 1px solid #585858;
+	}
+
+	.navbar {
+		height: 150px;
+		transition: all .75s ease;
+	}
+	.navbar-smaller {
+		height:100px;
+	}
+	.nav-justified > li {
+		vertical-align: bottom;
+	}
+
+	.nav-justified.nav-align > li {
+		vertical-align: middle;
+	}
+
+	.dropdown:hover .dropdown-menu{
+	   display: block;
+	   margin: auto;
+	}
+
+	.nav-justified > li > a{
+		color: #fff;
+		border-bottom: 1px solid transparent;
+	}
+
+	.nav .open > a,
+	.nav .open>a:focus, 
+	.nav .open>a:hover,
+	.nav-justified > li > a:hover,
+	.nav-justified > li > a:focus,
+	.nav .open > li > a,
+	.nav .open > li > a:focus,
+	.nav .open > li > a:hover {
+		background-color: transparent;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+	.logo {
+		width: 45%;
+		height: auto;
+	}
+
+	.logo-name {
+		width: 100%;
+		height: auto;
+	}
+
+	.carousel-inner .item {
+	    width: 100%;
+	    height: 750px;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	#my-slider {
+	    width: 100%;
+	}
+
+	.ad1 {
+	    background: url(../img/carousel/5.jpg) no-repeat center top fixed; 
+	}
+	.ad2 {
+	    background: url(../img/carousel/FW13C.jpg) no-repeat center top fixed; 
+	}
+	.ad3 {
+	    background: url(../img/carousel/PF14C.jpg) no-repeat center top fixed; 
+	}
+	.ad4 {
+	    background: url(../img/carousel/SS13A.jpg) no-repeat center top fixed; 
+	}
+	.ad5 {
+	    background: url(../img/carousel/SS13C.jpg) no-repeat center top fixed; 
+	}
+	#myCarousel {
+		height: 400px;
+	}
+	#myCarousel img {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.carousel-caption
+	{
+		position: absolute;
+		right: 0;
+		bottom: 350px;
+		left: 0;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #fff;
+		text-align: center;
+		background: rgba(0,0,0,0.4);
+	}
+}
